@@ -11,8 +11,7 @@ import ar.org.centros8.java.curso.trabajo_practico_2.interfaces.IGestionDeVehicu
 import lombok.Getter;
 
 @Getter
-@Component
-
+    
 public class Concesionaria implements IGestionDeVehiculos {
 
     private List<Vehiculo> vehiculos;
