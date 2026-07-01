@@ -40,7 +40,7 @@ public class Concesionaria implements IGestionDeVehiculos {
      *         vacía si no hay vehículos cargados.
      */
     @Override
-    public List<Vehiculo> masCaro() {
+    public List<Vehiculo> precioMasCaro() {
         double precioMax = vehiculos.stream().mapToDouble(Vehiculo::getPrecio).max().orElse(Double.NaN);
 
         return vehiculos.stream().filter(v -> v.getPrecio() == precioMax).toList();
@@ -55,7 +55,7 @@ public class Concesionaria implements IGestionDeVehiculos {
      *         vacía si no hay vehículos cargados
      */
     @Override
-    public List<Vehiculo> masBarato() {
+    public List<Vehiculo> precioMasBarato() {
         double precioMin = vehiculos.stream().mapToDouble(Vehiculo::getPrecio).min().orElse(Double.NaN);
 
         return vehiculos.stream().filter(v -> v.getPrecio() == precioMin).toList();

@@ -18,10 +18,10 @@ public class EjecutadorDeConcesionaria {
         separador();
 
         // Búsquedas
-        List<Vehiculo> masCaro = concesionaria.masCaro();
+        List<Vehiculo> masCaro = concesionaria.precioMasCaro();
         masCaro.forEach(v -> System.out.println("Vehículo más caro: " + v.getMarca() + " " + v.getModelo()));
 
-        List<Vehiculo> masBaratos = concesionaria.masBarato();
+        List<Vehiculo> masBaratos = concesionaria.precioMasBarato();
         masBaratos.forEach(v -> System.out.println("Vehículo más barato: " + v.getMarca() + " " + v.getModelo()));
 
         List<Vehiculo> conY = concesionaria.buscarPorLetra("Y");
