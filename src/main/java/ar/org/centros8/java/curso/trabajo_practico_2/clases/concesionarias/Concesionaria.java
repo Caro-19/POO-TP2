@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
 
 import ar.org.centros8.java.curso.trabajo_practico_2.clases.vehiculos.Vehiculo;
 import ar.org.centros8.java.curso.trabajo_practico_2.interfaces.IGestionDeVehiculos;
 import lombok.Getter;
 
 @Getter
-    
+
+
 public class Concesionaria implements IGestionDeVehiculos {
 
     private List<Vehiculo> vehiculos;

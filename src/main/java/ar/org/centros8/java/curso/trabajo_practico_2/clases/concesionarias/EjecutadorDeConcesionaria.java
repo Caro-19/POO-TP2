@@ -8,11 +8,6 @@ import ar.org.centros8.java.curso.trabajo_practico_2.clases.vehiculos.Vehiculo;
 
 public class EjecutadorDeConcesionaria {
 
-    /**
-     * Agrupa toda la lógica de presentación de la concesionaria:
-     * crea la concesionaria, carga los vehículos de ejemplo,
-     * muestra los datos y realiza las operaciones de la consigna.
-     */
     public void ejecutar() {
 
         Concesionaria concesionaria = new Concesionaria();
